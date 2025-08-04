@@ -3,12 +3,19 @@
 
 }
 
-html {
+html,
+body {
     font-family: system-ui, -apple-system,
         "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
         "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    display: flex;
+    flex-direction: column;
+    /* подреждаме вертикално */
+    min-height: 100vh;
+    /* височина минимум цял прозорец */
 }
+
 
 nav {
     background-color: #113343;
@@ -226,6 +233,9 @@ nav {
     position: relative;
     overflow: hidden;
     padding-bottom: 2rem;
+    flex: 1;
+    /* основното съдържание заема останалото пространство */
+
 }
 
 .main::before,
